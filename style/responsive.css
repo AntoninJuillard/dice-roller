@@ -1,0 +1,110 @@
+/**********************************************
+part to adapt for a maximum width of 970 pixels
+ *********************************************/
+@media screen and (max-width: 970px){
+    /* part to leave room for the history part by moving the throwing dices title and button */
+  .roll{
+    font-size: 2em;
+  }
+  /* part to adapt the size of the dices to the screen */
+  .dices-container .dice{
+    width: 130px;
+    height: 130px;
+    margin: 7px;
+  }
+}
+/**********************************************
+part to adapt for a maximum width of 840 pixels
+ *********************************************/
+@media screen and (max-width: 840px){
+  /* part to leave room for the history part by moving the throwing dices title and button */
+  .roll{
+    margin-bottom: 7%;
+  }
+  /* part to adapt the size of the dices to the screen */
+  .dices-container .dice{
+    width: 100px;
+    height: 100px;
+    margin: 7px;
+  }
+  .celebration{
+    width: 240px;
+
+  }
+}
+/**********************************************
+part to adapt for a maximum width of 670 pixels
+ *********************************************/
+@media screen and (max-width: 670px){
+
+  /* part to leave room for the history part by moving the throwing dices title and button */
+  .roll{
+    margin-top: 2%;
+    margin-bottom: 3.8%;
+    font-size: 1.4em;;
+  }
+  .roll:hover{
+    color:#FFF;
+    font-size: 1.4em;;
+  }
+  /* part to adapt the size of the dices to the screen */
+  .dices-container{
+    display: flex;
+    flex-flow: column;
+  }
+  /* part to adapt the size of the dices to the screen */
+  .dices-container .dice{
+    width: 95px;
+    height: 95px;
+    margin: 4px;
+  }
+  /* part to adapt the history part to the screen */
+  .history{
+    top:200px;
+    left: 6px;
+    font-size: 0.9em;
+  }
+  /* part to leave room for the dices by moving the score display */
+  .score-title{
+    position: absolute;
+    bottom: 52px;
+  }
+    /* part to leave room for the dices by moving the score display */
+  .score{
+    position: absolute;
+    bottom: 7px;
+    margin-bottom: 12px;
+  }
+}
+/**********************************************
+part to adapt for a maximum width of 450 pixels
+ *********************************************/
+@media screen and (max-width: 450px){
+    /* part to leave room for the history part by moving the throwing dices title and button */
+  .roll{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 1.4em;;
+  }
+  .roll:hover{
+    color:#FFF;
+    font-size: 1.4em;;
+  }
+  /* part to adapt the size of the dices to the screen */
+  .dices-container .dice{
+    width: 80px;
+    height: 80px;
+    margin: 4px;
+  }
+  /* part to adapt the size of the dices to the screen */
+  .history{
+    top:200px;
+    left: 2px;
+    font-size: 0.7em;
+  }
+  /* hiding all the gifs for small devices */
+  .celebration{
+    display: none;
+  }
+}
+/* doesnt work on iphone SE or smaller devices */

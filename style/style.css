@@ -1,0 +1,251 @@
+/* style for container of everything  */
+.dice-roller{
+  display: flex;
+  flex-flow: column;
+  position : fixed;
+  top : 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #0311c0;
+  color:#FFF;
+  font-family: 'Muli', sans-serif;
+  box-sizing: border-box;
+}
+/**************************************************/
+/* style for number of dices choice section  */
+.dice-roller .number-of-dices{
+  position: absolute;
+  top : 0;
+  right : 0;
+  padding: 12px;
+  color : #FFF;
+}
+/* style for the title of the number of dices choice section */
+.dice-roller .number-of-dices .number-of-dices-title{
+  margin: 0;
+  margin-bottom: 6px;
+  margin-right: 17px;
+  font-weight: 750;
+  font-size: 1em;
+  text-shadow: black 8px 1.4px;
+}
+/* style for the container of the number of dices choices  */
+.dice-roller .number-of-dices .number-of-dices-container{
+  display: flex;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 155px;
+  margin-right: 20px;
+}
+/* style on each choice of number of dices   */
+.dice-roller .number-of-dices .number-of-dices-container p{
+  margin: 5px;
+  padding: 3px;
+  border: 2px solid white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.selected{
+  background: #FFF;
+  color:orange;
+}
+.not-selected{
+  background: #00008B;
+  color: #FFF;
+}
+/* style on each choice of number of dices when a mouse is hover it  */
+.dice-roller .number-of-dices .number-of-dices-container p:hover{
+  font-weight: 900;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* style on the first choice of number of dices(1) at the beginning */
+
+/**************************************************/
+/* style on all the choosing the color of the dices section */
+.color-selector{
+  position: absolute;
+  right: 0;
+}
+/* style on the title of the choosing the color of the dices section */
+.color-selector .color-selector-title{
+  color:#FFF;
+  font-size: 0.8em;
+  font-weight: 750;
+  margin-left: 7px;
+  text-shadow: #FFF 1px 0 4.3px;
+}
+/* style on each choice of color*/
+.colors-container .orange,.white,.red,.purple{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+/* style on each choice of color when the mouse is hover*/
+.colors-container div:hover{
+  box-shadow: 2.8px 2.8px 2.8px black;
+  width: 50px;
+  height: 50px;
+}
+/* style on the choice of the orange dice color */
+.colors-container .orange{
+  background: #ffa500;
+}
+/* style on the choice of the white dice color */
+.colors-container .white{
+  background: #ffffff;
+}
+/* style on the choice of the red dice color */
+.colors-container .red{
+  background: #ff0000;
+}
+/* style on the choice of the purple dice color */
+.colors-container .purple{
+  background: #7D26CD;
+}
+/**************************************************/
+/* style on the title and button of the part throwing dices  */
+.roll{
+  color:#edd501;
+  font-size: 2.5em;
+  font-weight: bolder;
+  margin-bottom: 6.5%;
+  font-weight: 750;
+  z-index: 2;
+  cursor: pointer;
+  text-shadow: 0.5px 0.5px 1px grey, 0 0 0.2em black;
+}
+/* style on the title and button of the part throwing dices when mouse is hover it  */
+.roll:hover{
+  color:#FFF;
+  font-size: 2.8em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-shadow: 1px 1px 2px grey, 0 0 0.25em black;
+}
+/* style on the dices container  */
+.dices-container{
+  display: flex;
+  margin-left: 6px;
+}
+/* style on the dices  */
+.dices-container .dice{
+  width: 170px;
+  height: 170px;
+  margin: 10px;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* style to hide or display dices */
+.dice2{
+  display: none;
+}
+.dice3{
+  display: none;
+}
+.dice4{
+  display: none;
+}
+.dice5{
+  display: none;
+}
+/**************************************************/
+/* style on the history of dices whole section */
+.history{
+  position: absolute;
+  left:27px;
+  top : 20px;
+  width: 110px;
+  height: 310px;
+  overflow: hidden;
+}
+/* style on the title of the history part  */
+.history>h1{
+  color:#ffa500;
+  margin-bottom: 12px;
+  padding-left: 12.5px;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-shadow: black 2px 1.9px;
+}
+/* style on the container of the elements of history */
+.history-list{
+  display: flex;
+  flex-flow: column;
+}
+/* style on the elements of history */
+.history-list p{
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+}
+/* style for each element of history of the dices */
+.history p{
+  padding-left: 22.5px;
+  color:#ffa500;
+  font-weight: 900;
+  margin: 0;
+}
+/**************************************************/
+/* style for the score display section */
+/* style for the score display title */
+.score-title{
+  position: absolute;
+  bottom: 105px;
+  color:#FFF;
+  font-size: 1em;
+  margin-left: 3px;
+}
+/* style for the score display */
+.score{
+  position: absolute;
+  bottom: 10px;
+  color:#FFF;
+  margin-bottom: 70px;
+  font-size: 1.6em
+}
+/* style for the gif display when there is the same number on dices */
+.celebration{
+  position: absolute;
+  bottom: -1px;
+  right: 140px;
+  opacity: 0.8;
+  z-index: -2;
+}
+.celebration .award-one{
+  display: none;
+}
+.celebration .award-two{
+  display: none;
+  width: 480px;
+  height: 270px;
+}
+.celebration .award-three{
+  display: none;
+  position: relative;
+  left:79px;
+  width: 480px;
+  height: 275px;
+}
+.celebration .award-four{
+  display: none;
+  width: 480px;
+  height: 368px;
+}
